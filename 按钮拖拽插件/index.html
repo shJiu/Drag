@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		#box{
+			width: 1200px;
+			height: 650px;
+			position: relative;
+			border:3px solid #f00;
+		}
+		#box div{
+			position: absolute;
+			left: 0;
+			top: 0;
+		}
+		button{
+			width: 80px;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div id="box">
+	<button id="btn1">按钮一</button>
+	<button id="btn2">按钮二</button>
+	<button id="btn3">按钮三</button>
+	</div>
+	<script src='jquery-1.8.3.min.js'></script>
+	<script src='script.js'></script>
+	<script>
+		$('#btn1').CK({
+			col:'red',
+			isDarge:false
+		});
+		$('#btn2').CK({
+			col:'orange',
+			width:450,
+			height:150,
+			left:300,
+			top:50,
+			isconfine:true
+		})
+		$('#btn3').CK({
+			col:'blue',
+			width:600,
+			height:400,
+			left:500,
+			top:200
+		})
+	</script>
+</body>
+</html>
